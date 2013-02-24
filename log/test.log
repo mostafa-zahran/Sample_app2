@@ -5021,3 +5021,28 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2013-02-24 17:50:50 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.erb within layouts/application (50.0ms)
+  Rendered layouts/_shim.erb (0.6ms)
+  Rendered layouts/_header.erb (1.9ms)
+  Rendered layouts/_footer.erb (1.6ms)
+Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2013-02-24 17:50:50 +0200
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.erb (0.1ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.5ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
