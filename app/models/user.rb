@@ -19,4 +19,13 @@ class User < ActiveRecord::Base
 
   #Validation of Password Confirmation
   validates_presence_of(:password_confirmation)
+
+  #Validation of Remember Token
+  before_save :create_remember_token
+
+
+  private
+  def create_remember_token
+    self.remember_token=SecureRandom.urlsafe_base64
+  end
 end
