@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name, :password ,:password_confirmation
+  has_many :microposts, dependent: :destroy
 
   #Validatation of Name
   validates_presence_of(:name)
@@ -23,6 +24,10 @@ class User < ActiveRecord::Base
   #Validation of Remember Token
   before_save :create_remember_token
 
+  def feed
+    # This is preliminary. See "Following users" for the full implementation.
+    Micropost.where("user_id = ?",id)
+  end
 
   private
   def create_remember_token

@@ -8210,3 +8210,51 @@ Processing by UsersController#show as HTML
   Rendered layouts/_footer.erb (0.4ms)
 Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.5ms)
   [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (10.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:32:01 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$DLrFjnhrcGlD1DvRH0dPf..noDHAwyYUPr05j5u1r4q2l3klcfES."], ["remember_token", "3ry01WCuKkmLCGJhwaj_4A"], ["updated_at", Wed, 27 Feb 2013 09:32:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:32:01 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$hllNGrmFnydUlbMWpZm53utqlDAsBdAwYoGBC6LybPx0SSO5DpbSe"], ["remember_token", "k48EVWsRhgVH3sfIcgk-cQ"], ["updated_at", Wed, 27 Feb 2013 09:32:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:32:29 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$Qf3AxXh/5Sg68UwXsKi4BOjf0tjf8JdfMHF.cVG3dbF7kxypGJUPC"], ["remember_token", "Ue_x8uT45t6cCP01VWDP-w"], ["updated_at", Wed, 27 Feb 2013 09:32:29 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:32:29 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$RH5ob4f84Qaty/vI6nPEe.nF5LmmejWLSkdwIZ3u/yuRCxykhBlR6"], ["remember_token", "IAHH-U2NOjIt3FhGpBPD3Q"], ["updated_at", Wed, 27 Feb 2013 09:32:29 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:33:02 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$sooTzcjmBL8rbkml5NZVNu9QQUN2leOukJP9Oy9ijYi5NZ7h9h8nS"], ["remember_token", "hPDpjyblvOpju4yezdGKDA"], ["updated_at", Wed, 27 Feb 2013 09:33:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mostafa.k.zahran@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", Wed, 27 Feb 2013 09:33:02 UTC +00:00], ["email", "mostafa.k.zahran@gmail.com"], ["name", "Mostafa"], ["password_digest", "$2a$04$uC/rwxVYlR.XaaywrhYKSOGH3Q.f3zldj5cDJ5Fyzv7lym0m6p5FK"], ["remember_token", "QsXIMfJM3t7cNzcBCN9-7g"], ["updated_at", Wed, 27 Feb 2013 09:33:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
