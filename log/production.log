@@ -121,3 +121,14 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   /home/Mostafa/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
 
 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Migrating to CreateUsers (20130213155556)
+Migrating to AddIndexToUserEmail (20130218125350)
+Migrating to AddPasswordDigestToUsers (20130218131916)
+Migrating to AddRememberTokenToUsers (20130226104007)
+Migrating to AddAdminToUsers (20130226161417)
+Migrating to CreateMicroposts (20130227092459)
+Migrating to CreateRelationships (20130227141448)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
